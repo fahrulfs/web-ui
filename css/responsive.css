@@ -1,0 +1,98 @@
+/* 
+/* dekstop */
+@media (max-width:1920px) {
+    html {
+        font-size: 80%;
+    }
+
+}
+
+
+/* tablet */
+@media (max-width:758px) {
+    html {
+        font-size: 65%;
+    }
+
+    .nav-icon #menu {
+        display: inline-block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        transition: 0.3s;
+        width: 25rem;
+        height: 100vh;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .navbar .nav-menu a {
+        color: #fff;
+        display: block;
+        justify-content: center;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .navbar .nav-menu a::after {
+        transform-origin: 0 0;
+    }
+
+    .navbar .nav-menu a:hover::after {
+        transform: scaleX(1);
+    }
+
+
+
+    .hero-text h1 {
+        font-size: calc(1rem+2rem);
+    }
+
+
+
+}
+
+/* phone */
+@media (max-width:476px) {
+    html {
+        font-size: 55%;
+    }
+
+
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        margin-top: 40px;
+        flex-wrap: wrap-reverse;
+    }
+
+    .hero .hero-text button.hero-cta {
+        width: 100%;
+    }
+
+    .hero-img img {
+        width: 150px;
+    }
+
+    .about {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .about .about-img img {
+        display: none;
+    }
+
+    .footer {
+        gap: 1.3rem;
+        flex-wrap: wrap-reverse;
+    }
+}
