@@ -7,15 +7,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet"> -->
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/style.css">
@@ -38,12 +32,68 @@
         </div>
 
         <div class="nav-icon">
-            <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
-            <a href="#" id="menu"><i data-feather="menu"></i></a>
+            <a href="#" id="search-btn"><i data-feather="search"></i></a>
+            <a href="#" id="cart-btn"><i data-feather="shopping-cart"></i></a>
+            <a href="#" id="menu-btn"><i data-feather="menu"></i></a>
         </div>
+        <!-- shopping cart  -->
+        <div class="shopping-cart">
+            <div class="cart-item">
+                <img src="assets/md5.jpg" alt="">
 
+                <div class="cart-item-detail">
+                    <h3>Produk 1</h3>
+                    <div class="cart-item-price">
+                        Rp150.000
+                    </div>
+                </div>
+                <i data-feather="trash-2" class="cart-item-destroy"></i>
+            </div>
+            <div class="cart-item">
+                <img src="assets/md1.jpg" alt="">
+
+                <div class="cart-item-detail">
+                    <h3>Produk 1</h3>
+                    <div class="cart-item-price">
+                        Rp150.000
+                    </div>
+                </div>
+                <i data-feather="trash-2" class="cart-item-destroy"></i>
+            </div>
+            <div class="cart-item">
+                <img src="assets/md2.jpg" alt="">
+
+                <div class="cart-item-detail">
+                    <h3>Produk 1</h3>
+                    <div class="cart-item-price">
+                        Rp150.000
+                    </div>
+                </div>
+                <i data-feather="trash-2" class="cart-item-destroy"></i>
+            </div>
+            <div class="cart-item">
+                <img src="assets/md4.jpeg" alt="">
+
+                <div class="cart-item-detail">
+                    <h3>Produk 1</h3>
+                    <div class="cart-item-price">
+                        Rp150.000
+                    </div>
+                </div>
+                <i data-feather="trash-2" class="cart-item-destroy"></i>
+            </div>
+        </div>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search...">
+            <label for="search-box"><i data-feather="search"></i></label>
+        </div>
+        <!-- shopping cart -->
     </nav>
     <!-- NAVBAR END -->
+    <!-- search -->
+    <!-- search-->
+
+
     <!-- HERO BANNER -->
     <section class="hero">
         <div class="hero-text">
@@ -86,32 +136,6 @@
     <section id="product" class="product">
         <h2>product</h2>
         <div class="product-wrapper">
-
-            <div class="product-card">
-                <img src="assets/md1.jpg" alt="">
-                <div class="product-card-detail">
-                    <div class="product-star">
-                        <a href="" class="fa fa-star"></a>
-                        <a href="" class="fa fa-star"></a>
-                        <a href="" class="fa fa-star"></a>
-                        <a href="" class="fa fa-star"></a>
-                        <a href="" class="fa fa-star"></a>
-                    </div>
-
-                    <h3>madu hutan</h3>
-                    <p>Kemasan botol 650ml</p>
-                    <h4 class="price">Rp.130.000</h4>
-                    <div class="product-icons">
-                        <a href="" id="" class="modal-button">
-                            <i class="feather" data-feather="eye"></i>
-                        </a>
-                        <a href="" id="">
-                            <li data-feather="shopping-cart"></li>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
             <div class="product-card">
                 <img src="assets/md2.jpg" alt="">
                 <div class="product-card-detail">
@@ -128,15 +152,18 @@
                     <h4 class="price">Rp.130.000</h4>
                     <div class="product-icons">
                         <a href="" id="" class="modal-button">
-                            <li data-feather="eye"></li>
+                            <button class="product-detail">
+                                <span>detail produk</span>
+                            </button>
                         </a>
-                        <a href="" id="">
-                            <li data-feather="shopping-cart"></li>
+                        <a href="">
+                            <button class="btn">
+                                <li data-feather="shopping-cart"></li>
+                            </button>
                         </a>
                     </div>
                 </div>
             </div>
-
             <div class="product-card">
                 <img src="assets/md3.jpg" alt="">
                 <div class="product-card-detail">
@@ -153,15 +180,18 @@
                     <h4 class="price">Rp.130.000</h4>
                     <div class="product-icons">
                         <a href="" id="" class="modal-button">
-                            <li data-feather="eye"></li>
+                            <button class="product-detail">
+                                <span>detail produk</span>
+                            </button>
                         </a>
-                        <a href="" id="">
-                            <li data-feather="shopping-cart"></li>
+                        <a href="">
+                            <button class="btn">
+                                <li data-feather="shopping-cart"></li>
+                            </button>
                         </a>
                     </div>
                 </div>
             </div>
-
             <div class="product-card">
                 <img src="assets/md4.jpeg" alt="">
                 <div class="product-card-detail">
@@ -178,15 +208,18 @@
                     <h4 class="price">Rp.130.000</h4>
                     <div class="product-icons">
                         <a href="" id="" class="modal-button">
-                            <li data-feather="eye"></li>
+                            <button class="product-detail">
+                                <span>detail produk</span>
+                            </button>
                         </a>
-                        <a href="" id="">
-                            <li data-feather="shopping-cart"></li>
+                        <a href="">
+                            <button class="btn">
+                                <li data-feather="shopping-cart"></li>
+                            </button>
                         </a>
                     </div>
                 </div>
             </div>
-
             <div class="product-card">
                 <img src="assets/md5.jpg" alt="">
                 <div class="product-card-detail">
@@ -203,65 +236,18 @@
                     <h4 class="price">Rp.130.000</h4>
                     <div class="product-icons">
                         <a href="" id="" class="modal-button">
-                            <li data-feather="eye"></li>
+                            <button class="product-detail">
+                                <span>detail produk</span>
+                            </button>
                         </a>
-                        <a href="" id="">
-                            <li data-feather="shopping-cart"></li>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img src="assets/md6.jpeg" alt="">
-                <div class="product-card-detail">
-                    <div class="product-star">
-                        <a href="" class="fa fa-star"></a>
-                        <a href="" class="fa fa-star"></a>
-                        <a href="" class="fa fa-star"></a>
-                        <a href="" class="fa fa-star"></a>
-                        <a href="" class="fa fa-star"></a>
-                    </div>
-
-                    <h3>madu hutan</h3>
-                    <p>Kemasan botol 650ml</p>
-                    <h4 class="price">Rp.130.000</h4>
-                    <div class="product-icons">
-                        <a href="" id="" class="modal-button">
-                            <li data-feather="eye"></li>
-                        </a>
-                        <a href="" id="">
-                            <li data-feather="shopping-cart"></li>
+                        <a href="">
+                            <button class="btn">
+                                <li data-feather="shopping-cart"></li>
+                            </button>
                         </a>
                     </div>
                 </div>
             </div>
-
-            <div class="product-card">
-                <img src="assets/md1.jpg" alt="">
-                <div class="product-card-detail">
-                    <div class="product-star">
-                        <a href="" class="fa fa-star"></a>
-                        <a href="" class="fa fa-star"></a>
-                        <a href="" class="fa fa-star"></a>
-                        <a href="" class="fa fa-star"></a>
-                        <a href="" class="fa fa-star"></a>
-                    </div>
-
-                    <h3>madu hutan</h3>
-                    <p>Kemasan botol 650ml</p>
-                    <h4 class="price">Rp.130.000</h4>
-                    <div class="product-icons">
-                        <a href="" id="" class="modal-button">
-                            <li data-feather="eye"></li>
-                        </a>
-                        <a href="" id="">
-                            <li data-feather="shopping-cart"></li>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
         </div>
     </section>
     <!-- PRODUCT -->
@@ -327,28 +313,15 @@
             <div class="modal-detail">
                 <h2>madu hutan </h2>
                 <p>Lorem ipsum dolor sit amet consectetur adi
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ipsam repellat dolore consequatur,
-                    vitae sequi sint impedit incidunt quis ducimus!pisicing elit. Qui fugiat maxime aspernatur
-                    laudantium,
                     quam quos illum reiciendis! Obcaecati consequatur nihil distinctio quod molestiae quis esse.</p>
-                <div class="modal-star">
-                    <a href="" class="fa fa-star"></a>
-                    <a href="" class="fa fa-star"></a>
-                    <a href="" class="fa fa-star"></a>
-                    <a href="" class="fa fa-star"></a>
-                    <a href="" class="fa fa-star"></a>
-                </div>
 
                 <h4 class="modal-price">Rp.130.000</h4>
                 <div class="modal-cta">
                     <button class="add-to-cart">Add to cart
                     </button>
                 </div>
-
             </div>
         </div>
-
-        </img>
     </div>
     </div>
     <!-- BOD DETAIL -->

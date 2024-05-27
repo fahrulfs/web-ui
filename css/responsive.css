@@ -14,7 +14,7 @@
         font-size: 65%;
     }
 
-    .nav-icon #menu {
+    .nav-icon #menu-btn {
         display: inline-block;
     }
 
@@ -50,13 +50,13 @@
         transform: scaleX(1);
     }
 
-
-
     .hero-text h1 {
         font-size: calc(1rem+2rem);
     }
 
-
+    .modal-wraper {
+        flex-direction: column;
+    }
 
 }
 
